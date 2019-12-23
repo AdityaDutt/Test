@@ -12,7 +12,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/AdityaDutt/Test",
-    package_dir={'': 'Testing'},  # Optional
+    package_dir={'': 'src'},  # Optional
 
     # You can just specify package directories manually here if your project is
     # simple. Or you can use find_packages().
@@ -23,7 +23,7 @@ setup(
     #
     #   py_modules=["my_module"],
     #
-    packages=find_packages(where='Testing'),  # Required
+    packages=find_packages(where='src'),  # Required
 
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -33,7 +33,7 @@ setup(
     python_requires='>=3.6',
     entry_points={  # Optional
         'console_scripts': [
-            'sample=sample:main',
+            'src=src:main',
         ],
     }
 )
