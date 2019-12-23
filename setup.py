@@ -1,13 +1,12 @@
 import setuptools
 from setuptools import find_packages
 from distutils.core import setup
-import Testing
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name='Test1',
+    name='Test',
     author = 'Aditya Dutt',
     author_email = 'aditya.dutt@ufl.edu',
     license='MIT',
@@ -37,10 +36,5 @@ setup(
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
 
-    ],
-    entry_points={  # Optional
-        'console_scripts': [
-            'sample=sample:main',
-        ],
-    },
+    ]
 )
