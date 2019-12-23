@@ -31,4 +31,9 @@ setup(
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.6',
+    entry_points={  # Optional
+        'console_scripts': [
+            'sample=sample:main',
+        ],
+    }
 )
